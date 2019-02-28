@@ -7,14 +7,14 @@ Test it at `http://localhost:8080/greeting`
 ## Task 1
 Solve at home. Make a pull request against this repo.
 
-The data sources are preloaded into the in memory database in `src/main/resources/data.sql`
+The data sources are preloaded into the in memory database in [`src/main/resources/data.sql`](src/main/resources/data.sql)
 
-The new feature to implement is to get business card information.
-The requirements is that the `persons` that
-- does *not* have the occupation of being a student
-- only one business card if at the same company
+The new feature is to implement `GET` business card information.
+The requirements are:
+- Only `persons` that does **not** have the occupation of being a student
+- Only one business card if at the same company
 
-Add an API call to `/api/businesscards` that should return
+Add an API call to `/businesscards` that should return
 ```json
  [
   {
