@@ -9,10 +9,12 @@ Solve at home. Make a pull request against this repo.
 
 The data sources are preloaded into the in memory database in [`src/main/resources/data.sql`](src/main/resources/data.sql)
 
-The new feature is to implement `GET` business card information.
-The requirements are:
-- Only `persons` that does **not** have the occupation of being a student
-- Only one business card if at the same company
+The new feature is to implement `GET`business card information.
+The requirements are to print business cards for `persons`
+- That does **not** have the occupation of being a student
+- That works in `Gothenburg`
+
+A business card should contain their full name, occupation and name of company.
 
 Add an API call to `/businesscards` that should return
 ```json
@@ -20,12 +22,6 @@ Add an API call to `/businesscards` that should return
   {
     "id": 2,
     "name": "Severus Snape",
-    "occupation": "Teacher",
-    "company": "Abilia"
-  },
-  {
-    "id": 4,
-    "name": "Minerva McGonagall",
     "occupation": "Teacher",
     "company": "Abilia"
   },

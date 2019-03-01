@@ -23,11 +23,11 @@ public class PersonRepository {
         jdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
     }
 
-    public List<Person> getPersons() {
+    public List<Person> getAllPersons() {
         return jdbcTemplate.query(GET_PERSONS, PersonRepository::rsToPerson);
     }
 
     private static Person rsToPerson(ResultSet rs, int _rowNum) throws SQLException {
-        return new Person(rs.getInt("id"), rs.getString("full_name"), rs.getString("occupation"));
+        return new Person(rs.getInt("id"), rs.getString("full_name"));
     }
 }
