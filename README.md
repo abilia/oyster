@@ -1,8 +1,13 @@
 # Oyster
-This is a basic spring boot (https://spring.io/projects/spring-boot) rest api application.
+This is a spring boot (https://spring.io/projects/spring-boot) application.
 
-Start the app with the `bootRun` command.
+Build the application with `gradlew build`
+Start the app with the `gradlew bootRun`
+
 Test it at `http://localhost:8080/greeting`
+
+#### Prequisits and trouble shoot
+Target java version is java 8.
 
 ## Task 1
 Solve at home. Make a pull request against this repo.
