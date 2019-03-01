@@ -9,7 +9,7 @@ Solve at home. Make a pull request against this repo.
 
 The data sources are preloaded into the in memory database in [`src/main/resources/data.sql`](src/main/resources/data.sql)
 
-The new feature is to implement `GET`business card information.
+The new feature is to implement `GET` business card information.
 The requirements are to print business cards for `persons`
 - That does **not** have the occupation of being a student
 - That works in `Gothenburg`
