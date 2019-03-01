@@ -28,6 +28,6 @@ public class CompanyRepository {
     }
 
     private static Company rsToCompany(ResultSet rs, int _rowNum) throws SQLException {
-        return new Company(rs.getInt("id"), rs.getString("company"), rs.getString("city"));
+        return new Company(rs.getInt("id"), rs.getString("name"), rs.getString("city"));
     }
 }
