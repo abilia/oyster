@@ -17,7 +17,7 @@ The data sources are preloaded into the in memory database in [`src/main/resourc
 The new feature is to implement `GET` business card information.
 The requirements are to print business cards for `persons`
 - That does **not** have the occupation of being a student
-- That works in `Gothenburg`
+- With company placed in `Gothenburg`
 
 A business card should contain their full name, occupation and name of company.
 
