@@ -16,6 +16,9 @@ public class CompanyRepository {
     private static final String GET_COMPANIES =
             "SELECT * FROM companies";
 
+    private static final String GET_COMPANIES_FROM_CITY =
+            "SELECT * FROM companies WHERE city=";
+
     private NamedParameterJdbcTemplate jdbcTemplate;
 
     @Autowired
@@ -25,6 +28,10 @@ public class CompanyRepository {
 
     public List<Company> getCompanies() {
         return jdbcTemplate.query(GET_COMPANIES, CompanyRepository::rsToCompany);
+    }
+
+    public List<Company> getCompaniesFromCity(String city) {
+        return jdbcTemplate.query(GET_COMPANIES_FROM_CITY + "'" + city + "'", CompanyRepository::rsToCompany);
     }
 
     private static Company rsToCompany(ResultSet rs, int _rowNum) throws SQLException {
