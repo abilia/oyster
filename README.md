@@ -39,6 +39,8 @@ Add an API call to `/businesscards` that should return
 ]
 ```
 
+There are no restrictions in refactoring the current code, language selections or make further development. As long as it works and you can describe why you did your changes. But, it is only a task to start the discussions, so try not to overthink it.
+
 ## Task 2
 We solve together.
 
