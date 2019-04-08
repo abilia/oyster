@@ -1,15 +1,16 @@
 # Oyster
 This is a spring boot (https://spring.io/projects/spring-boot) application.
 
-Build the application with `gradlew build`
-Start the app with the `gradlew bootRun`
-
-Test it at `http://localhost:8080/greeting`
-
 There are **no restrictions** in refactoring the current code, language selections or make further development. As long as it works and you can describe why you did your changes. But, it is only a task to start the discussions, so try not to overthink it.
 
 #### Prequisits and trouble shoot
 Target java version is java 8.
+
+#### Start and run
+Build the application with `gradlew build`
+Start the app with the `gradlew bootRun`
+
+Test it at `http://localhost:8080/greeting`
 
 ## Task 1
 Solve at home. Make a pull request against this repo.
